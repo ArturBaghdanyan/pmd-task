@@ -28,9 +28,9 @@ const LoginPage = () => {
 					</div>
 					
 				</div>
-				<div className={style.login_container_column}>
-					<FormPage />
-				</div>
+					<div className={style.login_container_column}>
+						<FormPage />
+					</div>
 				</div>
 			</div>
   )

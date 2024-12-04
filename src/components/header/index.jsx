@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 
 const Header = () => {
   return (
-    <div className={style.header}>
+    <div className={`${style.header} ${style.item1}`}>
 
 
     </div>
