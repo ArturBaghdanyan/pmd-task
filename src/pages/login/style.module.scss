@@ -6,7 +6,7 @@
   url("../../assets/login_images/login-bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: "Zen Kaku Gothic Antique";
+	
 
 	&_container {
 		display: flex;
@@ -128,10 +128,15 @@
     						padding: 0 5px;
 							background: rgb(250, 250, 250);
 						}
-						> input {
+						 input {
 							background: none;
 							border: none;
 							padding-left: 15px;
+							&:active,
+							&:focus {
+							outline: none;
+							border: none;
+							}
 						}
 						
 						&_password {
@@ -141,8 +146,7 @@
 							padding: 0 15px;
 
 							> input {
-								background: none;
-								border: none;
+								padding: 0 !important;
 							}
 
 							> img {

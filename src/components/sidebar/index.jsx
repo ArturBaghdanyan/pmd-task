@@ -1,12 +1,12 @@
 import React from 'react'
 import style from "./style.module.scss";
 
-const Main = () => {
+const SideBar = () => {
   return (
-    <div className={style.main}>
+    <div className={style.sidebar}>
 
     </div>
   )
 }
 
-export default Main
+export default SideBar
