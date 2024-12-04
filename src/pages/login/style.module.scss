@@ -1,0 +1,204 @@
+.login {
+	width: 100%;
+	min-height: 100vh;
+	background-image: 
+  linear-gradient(to bottom, rgba(33, 33, 33, 0.8392), rgba(66, 66, 66, 0.2392)), 
+  url("../../assets/login_images/login-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Zen Kaku Gothic Antique";
+
+	&_container {
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		height: 768px;
+		min-height: 100vh;
+		column-gap: 60px;
+
+		&_column {
+			max-width: 380px;
+			height: 85%;
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			text-align: start;
+			color: rgba(255, 255, 255, 1);
+
+			&_image {
+				width: 273px;
+				height: 64px;
+				margin-top: 6.5rem;
+			
+			> img {
+				max-width: 100%;
+				height: 64px;
+			}
+		}
+			&_slide {
+				display: flex;
+				flex-direction: column;
+				row-gap: 50px;
+				margin-top: 6.5rem;
+
+				&_text {
+					row-gap: 40px;
+
+					> h1 {
+						font-size: 40px;
+						font-weight: 700;
+					}
+					> p {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 28px;
+					}
+				}
+				&_line {
+					display: flex;
+					column-gap: 10px;
+	
+					> span {
+						border: 2px solid rgba(255, 255, 255, 1);
+						width: 48px;
+						height: 2px;
+						background-color: rgba(255, 255, 255, 1);
+					}
+				}
+			}
+
+			
+
+			&_piece {
+				width: 100%;
+				height: 100%;
+				border-radius: 25px 25px 0 0;
+				background-color: rgba(250, 250, 250, 1);
+				color: black;
+				padding: 40px;
+				margin-bottom: 0;
+
+				&_title {
+					display: flex;
+					flex-direction: column;
+					align-items: start;
+					row-gap: 20px;
+					text-transform: uppercase;
+
+					> span {
+						font-weight: 400;
+						font-size: 13px;
+					}
+
+					> h3 {
+						font-weight: 700;
+						font-size: 25px;
+						justify-content: space-between;
+						margin: 0;
+					}
+				}
+	
+			&_form {
+				display: flex;
+				flex-direction: column;
+				row-gap: 16px;
+				margin-top: 40px;
+
+				&_inputs {
+					display: flex;
+					flex-direction: column;
+					row-gap: 20px;
+
+					
+					&_piece {
+						border: 1px solid rgba(66, 66, 66, 1);
+						border-radius: 8px;
+						height: 67px;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						position: relative;
+						z-index: 1;
+
+						> label {
+							font-weight: 400;
+							font-size: 13px;
+							position: absolute;
+							top: -10px;
+							left: 10px;
+    					padding: 0 5px;
+							z-index: 20; 
+						}
+						> input {
+							background: none;
+							border: none;
+							padding-left: 15px;
+						}
+						
+						&_password {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							padding: 0 15px;
+
+							> input {
+								background: none;
+								border: none;
+							}
+
+							> img {
+								cursor: pointer;
+								width: 16px;
+								height: 16px;
+							}
+						}
+					}
+			}
+			&_checkbox {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				&_remember {
+					display: flex;
+					column-gap: 10px;
+					align-items: center;
+
+					> input {
+						width: 20px;
+						height: 20px;
+
+						:checked {
+							background-color: rgba(158, 158, 158, 1);
+							border: none;
+						}
+					}
+					> span {
+						font-weight: 400;
+						font-size: 13px;
+						color: rgba(0, 0, 0, 1);
+					}
+				}
+				> button {
+					background: none;
+					border: none;
+					color: rgba(66, 66, 66, 1);
+					font-weight: 400;
+				}
+			}
+			> button {
+				width: 100%;
+				height: 42px;
+				font-weight: 700;
+				margin: 0 auto;
+				background:rgba(0, 0, 0, 1);
+				border: none;
+				border-radius: 8px;
+				color: white;
+				text-transform: uppercase;
+			}
+		}
+	}
+}	
+}
+}
