@@ -4,8 +4,7 @@
     'sidebar header header header'
     'sidebar aside aside aside'
     'sidebar aside aside aside';
-    grid-gap: 10px;
     width: 100%;
     height: auto;
-    background: #1A202C;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
 }
