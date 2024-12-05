@@ -1,4 +1,5 @@
-@import "./products/style.module.scss";
+@import "./first-row/products/style.module.scss";
+@import "./sec-row/activity/style.module.scss";
 
 .item2 {
     grid-area: aside;
@@ -32,7 +33,6 @@
       width: 100%;
       height: auto;
       background: lightgray;
-      
     }
   
     &_asideTwo {
@@ -45,6 +45,13 @@
       width: 100%;
       height: auto;
       background: lightgray;
+    }
+    & h2 {
+      color: rgba(52, 60, 106, 1);
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      margin: 0;
     }
   }
   

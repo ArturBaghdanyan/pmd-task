@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./style.module.scss";
-import { productsData } from "../../../data/products";
+import { productsData } from "../../../../data/products";
 
 const Products = () => {
   return (
@@ -14,7 +14,7 @@ const Products = () => {
             <th>{i.title}</th>
           </tr>
         </thead>
-        <div style={{borderTop: "1px solid rgba(244, 245, 247, 1)"}}></div>
+        <div style={{borderTop: "1px solid rgba(244, 245, 247, 1)", width: "100%"}}></div>
       
         <tbody className={style.aside_asideOne_content_piece_table_row_body}>
           {i.menu.map((j, index) => (

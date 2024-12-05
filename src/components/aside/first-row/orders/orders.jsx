@@ -1,6 +1,6 @@
 import React from 'react'
 import List from './list';
-import { orderList } from '../../../data/orderList';
+import { orderList } from '../../../../data/orderList';
 import style from "./style.module.scss";
 
 const Orders = () => {

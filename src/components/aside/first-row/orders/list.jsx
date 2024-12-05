@@ -11,7 +11,7 @@ const List = ({icon, title, text, price}) => {
             <h3>{title}</h3>
             <p>{text}</p>
         </div>
-        <div>
+        <div className={style.orders_list_item_price}>
             <span>{price}</span>
         </div>
     </div>

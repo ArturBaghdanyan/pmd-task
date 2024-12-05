@@ -5,22 +5,16 @@
       align-items: center;
       width: 100%;
       height: auto;
-      // column-gap: 22px;
-
-      & h2 {
-        color: rgba(52, 60, 106, 1);
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
-        margin: 0;
-      }
+      margin-top: 25px;
 
       &_piece {
         max-width: 67%;
         width: 100%;
+
         > h2 {
           padding-left: 12px;
         }
+
       &_table {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -29,6 +23,7 @@
         background: rgba(255, 255, 255, 1);
         border-radius: 25px;
         padding: 20px 0 20px 35px;
+        margin-top: 35px;
 
         &_row {
           display: flex;
@@ -45,8 +40,8 @@
           &_body {
             display: flex;
             flex-direction: column;
-            row-gap: 25px;
-            margin-top: 20px;
+            row-gap: 12px;
+            margin-top: 10px;
           > tr > td {
             color: rgba(35, 35, 35, 1);
             font-weight: 400;
