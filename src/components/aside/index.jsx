@@ -4,6 +4,7 @@ import Products from './first-row/products/products';
 import Orders from './first-row/orders/orders';
 import Activity from './sec-row/activity/activity';
 import Statistics from './sec-row/statistics/statistics';
+import Footer from './third-row/footer';
 
 const AsidePage = () => {
   return (
@@ -28,7 +29,12 @@ const AsidePage = () => {
         </div>
 
       </div>
-      <div className={`${style.aside_asideThree} ${style.aside_third}`}>three</div>
+      <div className={`${style.aside_asideThree} ${style.aside_third}`}>
+        <div className="container_spacing">
+          <Footer />
+        </div>
+        
+      </div>
     </aside>
   )
 }
