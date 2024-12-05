@@ -1,5 +1,7 @@
 import React from 'react'
 import style from "./style.module.scss";
+import Products from './products/products';
+import Orders from './orders/orders';
 
 const AsidePage = () => {
   return (
@@ -8,38 +10,9 @@ const AsidePage = () => {
         
         <div className="container_spacing">
           <div className={`${style.aside_asideOne_content}`}>
-
-          <div>
-            <h2>Most selling products</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+            <Products />
+            <Orders />
           </div>
-          <div>
-            <h2>Recent Orders</h2>
-            <div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <h3></h3>
-                <p></p>
-              </div>
-              <div>
-                <span>$850</span>
-              </div>
-            </div>
-          </div>
-          </div>
-
         </div>
         
         <div></div>

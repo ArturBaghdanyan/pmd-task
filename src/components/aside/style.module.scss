@@ -1,3 +1,5 @@
+@import "./products/style.module.scss";
+
 .item2 {
     grid-area: aside;
   }
@@ -7,12 +9,12 @@
     height: 100vh;
     background: lightgray;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Defines a 2-column layout */
-    grid-template-rows: auto auto auto; /* Defines 3 rows */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto; 
     grid-template-areas: 
       "asideOne asideOne"
       "asideTwo asideTwo"
-      "asideThree asideThree"; /* Consistent column count */
+      "asideThree asideThree"; 
   
     &_first {
       grid-area: asideOne;
@@ -28,27 +30,20 @@
   
     &_asideOne {
       width: 100%;
-      height: 100vh;
+      height: auto;
       background: lightgray;
-
-      &_content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: auto;
-      }
+      
     }
   
     &_asideTwo {
       width: 100%;
-      height: 100vh;
+      height: auto;
       background: lightgray;
     }
   
     &_asideThree {
       width: 100%;
-      height: 100vh;
+      height: auto;
       background: lightgray;
     }
   }
