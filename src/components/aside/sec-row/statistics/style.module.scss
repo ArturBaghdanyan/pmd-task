@@ -1,4 +1,45 @@
 .statistics {
     width: 31%;
     height: auto;
+
+    &_content {
+        height: auto;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 25px;
+        padding: 6.5rem 2rem;
+        margin-top: 35px;
+        position: relative;
+
+        & span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: rgba(255, 255, 255, 1);
+        }
+        &_first {
+            position: absolute;
+            top: 25%;
+            left: 29%;
+            text-align: center;  
+        }
+
+        &_sec {
+            position: absolute; 
+            top: 49%;
+            right: 61%;
+            text-align: center;
+        }
+        &_third {
+            position: absolute;
+            top: 36%;
+            right: 17%;
+            text-align: center;
+        }
+        &_fourth {
+            position: absolute;
+            top: 56%;
+            right: 34%;
+            text-align: center;
+        }
+    }
 }
