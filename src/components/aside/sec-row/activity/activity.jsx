@@ -6,7 +6,7 @@ import style from "./style.module.scss";
 
 const Activity = () => {
   return (
-    <div className={style.aside_asideTwo_content_activity}>
+    <section className={style.aside_asideTwo_content_activity}>
 			<h2>Weekly Activity</h2>
 			<div className={style.aside_asideTwo_content_activity_row}>
 				<div className={style.aside_asideTwo_content_activity_row_eclipse}>
@@ -64,7 +64,7 @@ const Activity = () => {
 				</div>
 
 			</div>
-    </div>
+    </section>
   )
 }
 

@@ -5,7 +5,7 @@ import expense from "../../../../assets/mainpage/statistics_images/expense.svg";
 const Statistics = () => {
 
   return (
-    <div className={style.statistics}>
+    <section className={style.statistics}>
       <h2>Expense Statistics</h2>
       <div className={style.statistics_content}>
         <div className={style.statistics_content_first}>
@@ -36,7 +36,7 @@ const Statistics = () => {
           <img src={expense} alt="expense" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

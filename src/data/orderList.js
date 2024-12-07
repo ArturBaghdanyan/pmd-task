@@ -9,20 +9,20 @@ export const orderList = [
         icon: business,
         title: 'Deposit from my Card',
         text: '28 January 2021',
-        price: '-$850',
+        price: 850,
     },
     {
         id: 1,
         icon: paypal,
         title: 'Deposit Paypal',
         text: '25 January 2021',
-        price: '+$2,500',
+        price: 2500,
     },
     {
         id: 1,
         icon: price,
         title: 'Jemi Wilson',
         text: '21 January 2021',
-        price: '+$5,400',
+        price: 5400,
     },
 ]
