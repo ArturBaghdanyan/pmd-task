@@ -12,14 +12,14 @@ export const orderList = [
         price: 850,
     },
     {
-        id: 1,
+        id: 2,
         icon: paypal,
         title: 'Deposit Paypal',
         text: '25 January 2021',
         price: 2500,
     },
     {
-        id: 1,
+        id: 3,
         icon: price,
         title: 'Jemi Wilson',
         text: '21 January 2021',
