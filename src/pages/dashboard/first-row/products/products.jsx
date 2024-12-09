@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./style.module.scss";
-import { productsData } from "../../../../data/products";
+import { productsData } from "../../../../data/dashboard/products";
 
 const Products = () => {
   return (

@@ -1,10 +1,12 @@
-.container {
-    display: grid;
-    grid-template-areas:
-    'sidebar header header header'
-    'sidebar aside aside aside'
-    'sidebar aside aside aside';
+.forms {
     width: 100%;
     height: auto;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    display: flex;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow: hidden;
+    }
 }

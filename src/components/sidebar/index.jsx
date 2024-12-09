@@ -6,7 +6,7 @@ import ListPages from './list';
 const SideBar = () => {
 
   return (
-    <div className={`${style.sidebar} ${style.item3}`}>
+    <div className={style.sidebar}>
       <div className='container_spacing'>
         <div className={style.sidebar_logo}>
           <img src={logo} alt="logo" />
