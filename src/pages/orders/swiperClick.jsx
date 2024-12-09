@@ -5,6 +5,7 @@ import style from "./style.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import "swiper/css/pagination";
 
 export function SwiperList() {
   const swiperRef = useRef(null);
@@ -32,6 +33,7 @@ export function SwiperList() {
         autoHeight={true}
         loop={false}
         navigation
+        pagination
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className={style.orders_mySwiper_swiperList}
     >
