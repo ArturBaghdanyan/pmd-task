@@ -7,9 +7,11 @@ import style from "./style.module.scss";
 const MainPage = () => {
   return (
     <div className={style.container}>
-        <Header />
-        <AsidePage />
         <SideBar />
+        <div className={style.column}>
+          <Header />
+          <AsidePage />
+        </div>
     </div>
   )
 }

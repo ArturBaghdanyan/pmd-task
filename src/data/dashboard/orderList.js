@@ -1,6 +1,6 @@
-import business from "../assets/mainpage/orders_icons/business.svg";
-import paypal from "../assets/mainpage/orders_icons/paypal.svg";
-import price from "../assets/mainpage/orders_icons/price.svg";
+import business from "../../assets/mainpage/orders_icons/business.svg";
+import paypal from "../../assets/mainpage/orders_icons/paypal.svg";
+import price from "../../assets/mainpage/orders_icons/price.svg";
 
 
 export const orderList = [

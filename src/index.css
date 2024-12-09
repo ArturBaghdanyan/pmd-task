@@ -7,3 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container_spacing {
+  padding: 0 2rem;
+}

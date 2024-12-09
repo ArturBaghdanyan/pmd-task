@@ -7,7 +7,7 @@ import search from "../../assets/mainpage/header_images/search.svg";
 
 const Header = () => {
   return (
-    <header className={`${style.header} ${style.item1}`}>
+    <header className={style.header}>
       <div className={`${style.header_container} container_spacing`}>
         
         <div className={style.header_container_right}>
