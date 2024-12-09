@@ -15,6 +15,8 @@ const Header = ({isHomePage}) => {
           <div className={style.header_container_right_overview}>
           {isHomePage === 'Orders' ? (
               <span>Orders</span>
+            ) : isHomePage === "ordersDetails" ? (
+              <span>Orders</span>
             ) : isHomePage === 'Products' ? (
               <span>Products</span>
             ) : isHomePage === 'Reviews' ? (

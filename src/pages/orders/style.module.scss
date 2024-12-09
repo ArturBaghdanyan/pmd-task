@@ -1,15 +1,18 @@
+@import "./order-details/style.module.scss";
+
 .orders {
 	width: 100%;
 	height: auto;
 	background: lightgray;
-	padding: 20px 0;
 
-	> h2 {
+	> div > h2 {
 		color: rgba(52, 60, 106, 1);
 		font-weight: 600;
 		font-size: 22px;
 		line-height: 27px;
 		margin: 0;
+        padding-top: 30px;
+
 	}
 
 	&_list {
@@ -56,7 +59,7 @@
 						color: rgba(35, 35, 35, 1);
 
 					}
-					> button {
+					a > button {
 						width: 100px;
 						height: 37px;
 						color: rgba(18, 50, 136, 1);

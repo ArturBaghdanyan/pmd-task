@@ -3,6 +3,7 @@ import style from "./style.module.scss";
 import { orderData } from '../../data/orders/orderList';
 import { SwiperList } from './swiperClick';
 import Header from '../../components/header';
+import { Link } from 'react-router-dom';
 
 const OrdersPage = () => {
   const [currentPage, setCurrentPage] = useState('Orders');
@@ -24,7 +25,9 @@ const OrdersPage = () => {
                   {item.column.text &&
                     item.column.text.map((text, index) =>
                     item.column.id === 7 ? ( 
-                      <button key={`${item.id}-${index}`}>{text}</button>
+                      <Link key={`${item.id}-${index}`} to="/orderDetails">
+                        <button key={`${item.id}-${index}`}>{text}</button>
+                      </Link>
                     ) : (
                       <span key={`${item.id}-${index}`}>{text}</span>
                     )
