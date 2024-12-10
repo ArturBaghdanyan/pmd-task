@@ -1,9 +1,9 @@
 import React from 'react'
 import List from './list';
-import { orderList } from '../../../../data/orderList';
+import { orderList } from '../../../../data/dashboard/orderList';
 import style from "./style.module.scss";
 
-const Orders = () => {
+const RecentOrders = () => {
   return (
     <div className={style.orders}>
         <h2>Recent Orders</h2>
@@ -23,4 +23,4 @@ const Orders = () => {
   )
 }
 
-export default Orders
+export default RecentOrders

@@ -7,6 +7,7 @@ import Header from './header/index';
 const MainPage = () => {
   return (
     <div className={style.forms}>
+    <div className={style.forms}>
         <SideBar />
         <div className={style.column}>
           <Header />
