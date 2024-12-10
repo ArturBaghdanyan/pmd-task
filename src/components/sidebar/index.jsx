@@ -7,13 +7,10 @@ const SideBar = () => {
 
   return (
     <div className={style.sidebar}>
-      <div className='container_spacing'>
         <div className={style.sidebar_logo}>
           <img src={logo} alt="logo" />
         </div>
-        <ListPages />
-      </div>
-      
+        <ListPages />      
     </div>
   )
 }

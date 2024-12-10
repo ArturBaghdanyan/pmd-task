@@ -1,9 +1,10 @@
 .sidebar {
-    width: 250px;
+    width: 13.5%;
     height: 100vh;
     background: rgba(255, 255, 255, 1);
     border-right: 1px solid rgba(230, 239, 245, 1);
-
+    padding: 0 30px;
+    
     &_logo {
         width: 36px;
         height: 36px;

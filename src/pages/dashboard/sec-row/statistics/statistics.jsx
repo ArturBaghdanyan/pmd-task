@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./style.module.scss";
-import expense from "../../../../assets/mainpage/statistics_images/expense.svg";
+import PolarAreaChart from './polarChart';
 
 const Statistics = () => {
 
@@ -8,7 +8,7 @@ const Statistics = () => {
     <section className={style.statistics}>
       <h2>Expense Statistics</h2>
       <div className={style.statistics_content}>
-        <div className={style.statistics_content_first}>
+        {/* <div className={style.statistics_content_first}>
           <span>
             30% <br /> 
             Entertainment
@@ -31,10 +31,8 @@ const Statistics = () => {
             35% <br />
             Others
           </span>
-        </div>
-        <div>
-          <img src={expense} alt="expense" />
-        </div>
+        </div> */}
+        <PolarAreaChart />
       </div>
     </section>
   )

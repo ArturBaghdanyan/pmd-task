@@ -13,9 +13,10 @@
         margin: 35px 0 0 0;
 
         &_item {
-                display: flex;
+                display: grid;
                 align-items: center;
-                column-gap: 15px;
+                grid-template-columns: 20% 55% 20%;
+                justify-content: space-between;
             
             &_icon {
                 width: 55px;
@@ -48,12 +49,7 @@
                 }
             }
             &_price {
-                &_number:nth-child(2) {
-                    margin-left: 40px;
-                }
-                &_number:nth-child(3) {
-                 margin-left: 45px;
-                }
+               text-align: center;
             }
         }
     }
