@@ -52,7 +52,7 @@ const OrdersPage = () => {
             </div>
           </div>
         </div>
-        <SwiperList />
+        {/* <SwiperList /> */}
       </div>
     </>
 
