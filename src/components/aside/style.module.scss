@@ -1,57 +1,33 @@
 @import "./first-row/products/style.module.scss";
 @import "./sec-row/activity/style.module.scss";
 
-.item2 {
-    grid-area: aside;
-  }
-  
-  .aside {
+.aside {
+  width: 100%;
+  height: auto;
+  background: #F5F7FAFF;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+
+  &_asideOne {
     width: 100%;
-    height: 100vh;
-    background: lightgray;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto; 
-    grid-template-areas: 
-      "asideOne asideOne"
-      "asideTwo asideTwo"
-      "asideThree asideThree"; 
-  
-    &_first {
-      grid-area: asideOne;
-    }
-  
-    &_sec {
-      grid-area: asideTwo;
-    }
-  
-    &_third {
-      grid-area: asideThree;
-    }
-  
-    &_asideOne {
-      width: 100%;
-      height: auto;
-      background: lightgray;
-    }
-  
-    &_asideTwo {
-      width: 100%;
-      height: auto;
-      background: lightgray;
-    }
-  
-    &_asideThree {
-      width: 100%;
-      height: auto;
-      background: lightgray;
-    }
-    & h2 {
-      color: rgba(52, 60, 106, 1);
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 27px;
-      margin: 0;
-    }
+    height: auto;
   }
-  
+
+  &_asideTwo {
+    width: 100%;
+    height: auto;
+  }
+
+  &_asideThree {
+    width: 100%;
+    height: auto;
+  }
+  & h2 {
+    color: rgba(52, 60, 106, 1);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+  }
+}

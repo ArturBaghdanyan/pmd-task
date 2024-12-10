@@ -8,18 +8,18 @@ import Footer from './third-row/footer';
 
 const AsidePage = () => {
   return (
-    <aside className={`${style.aside} ${style.item2} `}>
+    <aside className={style.aside}>
 
-      <div className={`${style.aside_asideOne} ${style.aside_first}`}>
+      <div className={style.aside_asideOne}>
         <div className="container_spacing">
-          <div className={`${style.aside_asideOne_content}`}>
+          <div className={style.aside_asideOne_content}>
             <Products />
             <Orders />
           </div>
         </div>
       </div>
 
-      <div className={`${style.aside_asideTwo} ${style.aside_sec}`}>
+      <div className={style.aside_asideTwo}>
         <div className="container_spacing">
           <div className={style.aside_asideTwo_content}>
             <Activity />

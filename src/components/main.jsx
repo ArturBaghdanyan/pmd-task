@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from './header/index';
 import AsidePage from './aside/index'
 import SideBar from './sidebar/index';
 import style from "./style.module.scss";
+import Header from './header/index';
 
 const MainPage = () => {
   return (
-    <div className={style.container}>
-        <Header />
-        <AsidePage />
+    <div className={style.forms}>
         <SideBar />
+        <div className={style.column}>
+          <Header />
+          <AsidePage />
+        </div>
     </div>
   )
 }
