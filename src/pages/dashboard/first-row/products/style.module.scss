@@ -9,7 +9,7 @@
       margin-top: 25px;
 
       &_piece {
-        max-width: 67%;
+        max-width: 65%;
         width: 100%;
 
         > h2 {
@@ -17,17 +17,18 @@
         }
 
       &_table {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         background: rgba(255, 255, 255, 1);
         border-radius: 25px;
-        padding: 20px 0 20px 35px;
+        padding: 20px 0 20px 50px;
         margin: 35px 0 0 0;
-
+        
         &_row {
-          display: flex;
-          flex-direction: column;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 20% 27% repeat(2, 25%);
           align-items: start;
+          justify-content: start;
+
           &_head {
 
             color: rgba(113, 142, 191, 1);
