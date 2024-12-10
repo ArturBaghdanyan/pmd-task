@@ -7,8 +7,10 @@ const Products = () => {
     <section className={style.aside_asideOne_content_piece}>
     <h2>Most selling products</h2>
       <menu className={style.aside_asideOne_content_piece_table}>
+        <div className={style.aside_asideOne_content_piece_table_row}>
       {productsData.map(i => (
-        <div key={i.id} className={style.aside_asideOne_content_piece_table_row}>
+          <div key={i.id}>
+            
           <div className={style.aside_asideOne_content_piece_table_row_head}>
             <span>{i.title}</span>
           </div>
@@ -20,8 +22,9 @@ const Products = () => {
               <span key={`${i.id}-${index}`}>{j}</span>
             ))}
           </div>
-        </div>
+          </div>
       ))}
+      </div>
     </menu>
   </section>
   )

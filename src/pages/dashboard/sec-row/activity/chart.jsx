@@ -7,7 +7,7 @@ function Barchart() {
     <>
       <Chart
         type="bar"
-        width={650}
+        width="100%"
         height={250}
         className={style.aside_asideTwo_content_activity_row_statistics_item}
           series={[
@@ -33,6 +33,15 @@ function Barchart() {
               "Thu",
               "Fri",
             ],
+            yaxis: {
+              labels: {
+                style: {
+                  colors: ["rgba(113, 142, 191, 1)"],
+                  fontSize: "13px",
+                  fontWeight: 400,
+                },
+              },
+            }
           },
           plotOptions: {
             bar: {

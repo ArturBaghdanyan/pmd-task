@@ -7,8 +7,7 @@ import OrderDetails from '../../pages/orders/order-details/orderDetails';
 
 const AsidePage = () => {
   return (
-    <aside>
-      
+    <aside>  
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/orders" element={<OrdersPage />} />

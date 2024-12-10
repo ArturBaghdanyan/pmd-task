@@ -11,17 +11,17 @@ const Dashboard = () => {
   return (
     <>
       <Header />
-      <div className={`${style.aside}`}>
-          <div className={`${style.aside_asideOne}`}>
+      <div className={style.aside}>
+          <div className={style.aside_asideOne}>
           <div className="container_spacing">
-            <div className={`${style.aside_asideOne_content}`}>
+            <div className={style.aside_asideOne_content}>
               <Products />
               <RecentOrders />
             </div>
           </div>
         </div>
 
-        <div className={`${style.aside_asideTwo}`}>
+        <div className={style.aside_asideTwo}>
           <div className="container_spacing">
             <div className={style.aside_asideTwo_content}>
               <Activity />
@@ -31,7 +31,7 @@ const Dashboard = () => {
           </div>
 
         </div>
-        <div className={`${style.aside_asideThree}`}>
+        <div className={style.aside_asideThree}>
           <div className="container_spacing">
             <Footer />
           </div>
