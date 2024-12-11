@@ -1,7 +1,8 @@
 import React from 'react'
 import style from "./style.module.scss";
 import logo from "../../assets/mainpage/header_images/logo.svg";
-import ListPages from './list';
+import DesktopListPages from './desktopList';
+import TabListPages from './tabList';
 
 const SideBar = ({isTab}) => {
 
@@ -18,7 +19,8 @@ const SideBar = ({isTab}) => {
           ) : <img src={logo} alt="logo" />}
         </div>
 
-        <ListPages />      
+        {isTab ? <TabListPages /> : <DesktopListPages /> }
+    
       </div>
     </div>
   )

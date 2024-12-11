@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import style from "./style.module.scss";
-import home from "../../assets/mainpage/sidebar_icons/home.svg";
-import transfer from "../../assets/mainpage/sidebar_icons/transfer.svg";
-import products from "../../assets/mainpage/sidebar_icons/products.svg";
-import reviews from "../../assets/mainpage/sidebar_icons/reviews.svg";
-import creditCard from "../../assets/mainpage/sidebar_icons/creditCard.svg";
-import loan from "../../assets/mainpage/sidebar_icons/loan.svg";
-import settings from "../../assets/mainpage/sidebar_icons/settings.svg";
+import home from "../../assets/mainpage/sidebar_icons/desktop_icons/home.svg";
+import transfer from "../../assets/mainpage/sidebar_icons/desktop_icons/transfer.svg";
+import products from "../../assets/mainpage/sidebar_icons/desktop_icons/products.svg";
+import reviews from "../../assets/mainpage/sidebar_icons/desktop_icons/reviews.svg";
+import creditCard from "../../assets/mainpage/sidebar_icons/desktop_icons/creditCard.svg";
+import loan from "../../assets/mainpage/sidebar_icons/desktop_icons/loan.svg";
+import settings from "../../assets/mainpage/sidebar_icons/desktop_icons/settings.svg";
 
-const ListPages = () => {
+const DesktopListPages = () => {
   return (
     <div className={style.sidebar_container_list}>
       <div className={style.sidebar_container_list_item}>
@@ -44,4 +44,4 @@ const ListPages = () => {
   )
 }
 
-export default ListPages
+export default DesktopListPages

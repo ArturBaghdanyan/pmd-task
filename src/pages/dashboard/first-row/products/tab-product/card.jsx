@@ -32,7 +32,7 @@ export const Card = ({ style: customStyle, spanStyle, pStyle }) => {
           <p style={pStyle}>12/22</p>
         </div>
       </div>
-      <div className={style.cards_body_card_row}>
+      <div className={`${style.cards_body_card_row} ${style.cards_body_card_el}`}>
         <div className={style.cards_body_card_row_number}>
           <span style={spanStyle}>3778 **** **** 1234</span>
         </div>
