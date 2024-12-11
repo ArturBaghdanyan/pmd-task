@@ -7,6 +7,12 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        > span {
+            color: rgba(52, 60, 106, 1);
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
 
     &_body {
