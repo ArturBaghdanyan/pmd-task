@@ -5,7 +5,7 @@ import { productsData } from "../../../../data/dashboard/products";
 const DesktopProduct = () => {
   
   return (
-    <section className={style.aside_asideOne_content_piece}>
+    <>
     <h2>Most selling products</h2>
       <menu className={style.aside_asideOne_content_piece_table}>
         <div className={style.aside_asideOne_content_piece_table_row}>
@@ -27,7 +27,7 @@ const DesktopProduct = () => {
         ))}
       </div>
     </menu>
-  </section>
+    </>
   )
 }
 
