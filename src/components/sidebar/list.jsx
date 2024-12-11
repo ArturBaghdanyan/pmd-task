@@ -11,32 +11,32 @@ import settings from "../../assets/mainpage/sidebar_icons/settings.svg";
 
 const ListPages = () => {
   return (
-    <div className={style.sidebar_list}>
-      <div className={style.sidebar_list_item}>
+    <div className={style.sidebar_container_list}>
+      <div className={style.sidebar_container_list_item}>
         <img src={home} alt="icon" />
         <Link to="/">Dashboard</Link>
       </div>
-      <div className={style.sidebar_list_item}>
+      <div className={style.sidebar_container_list_item}>
         <img src={transfer} alt="icon" />
         <Link to="/orders">Orders</Link>
       </div>
-      <div className={style.sidebar_list_item}>
+      <div className={style.sidebar_container_list_item}>
         <img src={products} alt="icon" />
         <Link to="/products">Products</Link>
       </div>
-      <div className={style.sidebar_list_item}>
+      <div className={style.sidebar_container_list_item}>
         <img src={reviews} alt="icon" />
         <Link to="/reviews">Reviews</Link>
       </div>
-      <div className={style.sidebar_list_item}>
+      <div className={style.sidebar_container_list_item}>
         <img src={creditCard} alt="icon" />
         <Link to="/statistics">Statistics</Link>
       </div>
-      <div className={style.sidebar_list_item}>
+      <div className={style.sidebar_container_list_item}>
         <img src={loan} alt="icon" />
         <Link to="/currencies">Currencies</Link>
       </div>
-      <div className={style.sidebar_list_item}>
+      <div className={style.sidebar_container_list_item}>
         <img src={settings} alt="icon" />
         <Link to="/setting">Setting</Link>
       </div>

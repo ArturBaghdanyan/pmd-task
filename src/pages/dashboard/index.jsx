@@ -7,7 +7,8 @@ import Footer from '../../pages/dashboard/third-row/footer';
 import style from "./style.module.scss";
 import Header from '../../components/header';
 
-const Dashboard = () => {
+const Dashboard = ({isTab}) => {
+ 
   return (
     <>
       <Header />
@@ -15,8 +16,8 @@ const Dashboard = () => {
           <div className={style.aside_asideOne}>
           <div className="container_spacing">
             <div className={style.aside_asideOne_content}>
-              <Products />
-              <RecentOrders />
+              <Products isTab={isTab} />
+              <RecentOrders isTab={isTab} />
             </div>
           </div>
         </div>
