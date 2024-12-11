@@ -5,7 +5,7 @@ import revenue from "../../../assets/mainpage/footer_icons/revenue.svg";
 import total from "../../../assets/mainpage/footer_icons/total.svg";
 import style from "./style.module.scss";
 
-const Footer = () => {
+const DesktopFooter = () => {
   return (
     <div className={style.footer}>
         <div className={style.footer_item}>
@@ -48,4 +48,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default DesktopFooter

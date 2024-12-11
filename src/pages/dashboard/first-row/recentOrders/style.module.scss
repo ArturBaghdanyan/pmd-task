@@ -60,3 +60,47 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .orders {
+        width: 37% !important;
+
+        > h2 {
+            font-size: 18px;
+            line-height: 21px;
+            color: rgba(52, 60, 106, 1);
+        }
+        &_list {
+
+         &_item {
+            &_icon {
+                width: 40px !important;
+                height: 40px !important;
+
+                > img {
+                    max-width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+            &_text {
+                > h3 {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+                > p {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+            &_price {
+                &_number {
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+    }
+}

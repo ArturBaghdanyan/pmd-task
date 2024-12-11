@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import style from "./style.module.scss";
 import { orderData } from '../../data/orders/orderList';
-import { SwiperList } from './swiperClick';
+// import { SwiperList } from './swiperClick';
 import Header from '../../components/header';
 import { Link } from 'react-router-dom';
 

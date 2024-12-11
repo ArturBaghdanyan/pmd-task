@@ -50,5 +50,15 @@
         }
       }
     }
+
+  }
+  @media only screen and (max-width: 1024px) {
+    &_content {
+      column-gap: 25px;
+
+      &_piece {
+        max-width: 61% !important;
+      }
+    }
   }
 }
