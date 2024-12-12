@@ -9,96 +9,70 @@
     height: auto;
     margin-top: 25px;
     
-    &_activity {
-        max-width: 61%;
-        width: 100%;
+        &_activity {
+            max-width: 65%;
+            width: 100%;
 
-    &_row { 
-        width: 100%;
-        height: auto;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 25px;
-        padding: 20px 32px;
-        margin-top: 35px;
+        &_row { 
+            width: 100%;
+            height: auto;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 25px;
+            margin-top: 35px;
 
-        &_eclipse {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            column-gap: 30px;
-
-            &_item {
+            &_eclipse {
                 display: flex;
                 align-items: center;
-                column-gap: 10px;
-                > span {
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 18px;
-                    color: rgba(113, 142, 191, 1);
-                }
-            }
-        }
+                justify-content: end;
+                column-gap: 30px;
+                width: 91%;
+                padding-top: 20px;
+                margin: auto;
 
-        &_statistics {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            margin: 40px 0;
-
-            &_item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                row-gap: 26px;
-
-                &_line {
+                &_item {
                     display: flex;
                     align-items: center;
                     column-gap: 10px;
-                    width: 100%;
-                    height: 16px;
-                    
-                    > span {
-                        font-weight: 400;
-                    }
-                    > b {
-                        border-bottom: 1px solid rgba(243, 243, 245, 1);
-                        width: 100%;
-                        display: flex;
-                    }
-                }
-                &_icon {
-                    position: absolute;
-                    height: 55vh;
-                    width: 582px;
-                    left: 51%;
-                    bottom: 47%;              
-                    transform: translate(-50%, 50%);
-                    > img {
-                        max-width: 100%;
-                        height: 100%;
-                    }
-                }
-                &_days {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    column-gap: 67px;
-                    position: absolute;
-                    bottom: -30px;
 
                     > span {
                         font-weight: 400;
-                        font-size: 13px;
+                        font-size: 15px;
+                        line-height: 18px;
                         color: rgba(113, 142, 191, 1);
                     }
                 }
+            }
 
+            &_statistics {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                width: 95%;
+                padding: 20px 0;
+                margin: 0 auto;
+
+                &_item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            &_activity {
+                max-width: 61% !important;
             }
         }
     }
-    }
 }
-}
+
+.apexcharts-yaxis-label {
+    fill: none !important; /* Remove fill color */
+    font-size: 16px !important; /* Reset font size */
+    font-weight: 400 !important; /* Reset font weight */
+    font-size: 13px !important;
+    font-family: none !important;
+  }
+  

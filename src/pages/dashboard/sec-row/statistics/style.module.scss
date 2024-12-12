@@ -1,14 +1,16 @@
 .statistics {
-    width: 31%;
+    width: 32%;
     height: auto;
 
     &_content {
         height: auto;
         background: rgba(255, 255, 255, 1);
         border-radius: 25px;
-        padding: 3rem 2rem;
+        padding: 1.2rem 2rem;
         margin-top: 35px;
         position: relative;
+        display: flex;
+        justify-content: center;
 
         & span {
             font-weight: 700;
@@ -41,5 +43,10 @@
             right: 34%;
             text-align: center;
         }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .statistics {
+        max-width: 37% !important;
     }
 }

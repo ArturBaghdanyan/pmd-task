@@ -3,25 +3,26 @@ import Products from './first-row/products/products';
 import RecentOrders from './first-row/recentOrders/orders';
 import Activity from '../../pages/dashboard/sec-row/activity/activity';
 import Statistics from '../../pages/dashboard/sec-row/statistics/statistics';
-import Footer from '../../pages/dashboard/third-row/footer';
+import ThirdComp from '../../pages/dashboard/third-row/index';
 import style from "./style.module.scss";
 import Header from '../../components/header';
 
-const Dashboard = () => {
+const Dashboard = ({isTab}) => {
+ 
   return (
     <>
       <Header />
-      <div className={`${style.aside}`}>
-          <div className={`${style.aside_asideOne}`}>
+      <div className={style.aside}>
+          <div className={style.aside_asideOne}>
           <div className="container_spacing">
-            <div className={`${style.aside_asideOne_content}`}>
-              <Products />
-              <RecentOrders />
+            <div className={style.aside_asideOne_content}>
+              <Products isTab={isTab} />
+              <RecentOrders isTab={isTab} />
             </div>
           </div>
         </div>
 
-        <div className={`${style.aside_asideTwo}`}>
+        <div className={style.aside_asideTwo}>
           <div className="container_spacing">
             <div className={style.aside_asideTwo_content}>
               <Activity />
@@ -31,9 +32,9 @@ const Dashboard = () => {
           </div>
 
         </div>
-        <div className={`${style.aside_asideThree}`}>
+        <div className={style.aside_asideThree}>
           <div className="container_spacing">
-            <Footer />
+            <ThirdComp isTab={isTab} />
           </div>
           
         </div>
