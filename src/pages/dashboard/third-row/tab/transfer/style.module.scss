@@ -1,3 +1,139 @@
 .transfer {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+
+    &_list {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 31px 15px;
+        margin-top: 16px;
+
+        &_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_mySwiper {
+                width: 85%;
+                height: 100%;
+                margin: 0 !important;
+                
+                &_row {
+                    width: 35% !important;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    &_item {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        row-gap: 12px;
+
+                        > img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                        }
+                        &_text {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: 12px;
+                            > span {
+                                color: rgba(35, 35, 35, 1);
+                            }
+                            > p {
+                                margin: 0;
+                                color: rgba(113, 142, 191, 1);
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+            &_button {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                box-shadow: 4px 4px 4px 4px rgba(231, 228, 232, 0.8);
+                cursor: pointer;
+
+                > img {
+                    width: 6.5px;
+                    height: 13px;
+                    color: rgba(113, 142, 191, 1)
+                }
+            }
+        }   
+        &_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            margin-top: 26px;
+            column-gap: 20px;
+
+            &_span {
+                color: rgba(113, 142, 191, 1);
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+            }
+            &_text {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            &_input {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgba(237, 241, 247, 1);
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+                column-gap: 13px;
+
+                &_amount { 
+                    padding-left: 15px;
+                }
+
+                &_send {
+                    width: 100px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    background-color: rgba(24, 20, 243, 1);
+                    color: rgba(255, 255, 255, 1);
+                    column-gap: 9px;
+                    > span {
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
     
 }

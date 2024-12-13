@@ -46,12 +46,12 @@ export function SwiperList({ data }) {
       <Swiper
         loop={true}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-				onSlideChange={(swiper) => setIsActive(swiper.realIndex)}
+		onSlideChange={(swiper) => setIsActive(swiper.realIndex)}
         className={style.orders_list_column_mySwiper}
       >
         {data.map((item) => (
-					<div key={item.id}>
-					 	<SwiperSlide className={style.orders_list_column_mySwiper_list}>
+			<div key={item.id}>
+			<SwiperSlide className={style.orders_list_column_mySwiper_list}>
             <div className={style.orders_list_column_mySwiper_list_header}>
               {item.title &&
                 item.title.map((text, index) => (
@@ -211,15 +211,15 @@ export function SwiperList({ data }) {
 									))}
 							</div>
 						</SwiperSlide>
-					</div>
+			</div>
         ))}
       </Swiper>
     </div>
      <div className={style.orders_list_column_mySwiper_controls}>
      	<button 
-		 		onClick={handlePrev} 
-				className={style.orders_list_column_mySwiper_controls_button}
-			>
+			onClick={handlePrev} 
+			className={style.orders_list_column_mySwiper_controls_button}
+		>
        <img src={left} alt="Previous" />
        <span>Previous</span>
      </button>
