@@ -4,8 +4,11 @@
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    margin-bottom: 187px;
     column-gap: 30px;
+}
+
+.desktopFooter {
+    margin-bottom: 187px;
     
     &_item {
         width: 100%;
@@ -46,5 +49,11 @@
                 line-height: 30px;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .tabFooter {
+        margin-bottom: 25px;
     }
 }
