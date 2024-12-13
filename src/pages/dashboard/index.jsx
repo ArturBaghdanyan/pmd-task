@@ -15,19 +15,19 @@ const Dashboard = ({isTab}) => {
       <div className={style.aside}>
           <div className={style.aside_asideOne}>
           <div className="container_spacing">
-            <div className={style.aside_asideOne_content}>
+            <section className={style.aside_asideOne_content}>
               <Products isTab={isTab} />
               <RecentOrders isTab={isTab} />
-            </div>
+            </section>
           </div>
         </div>
 
         <div className={style.aside_asideTwo}>
           <div className="container_spacing">
-            <div className={style.aside_asideTwo_content}>
+            <section className={style.aside_asideTwo_content}>
               <Activity />
               <Statistics />
-            </div>
+            </section>
             
           </div>
 

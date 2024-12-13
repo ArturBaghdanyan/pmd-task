@@ -8,8 +8,8 @@
         flex-direction: column;
         background: rgba(255, 255, 255, 1);
         border-radius: 25px;
-        padding: 20px 25px;
-        row-gap: 15px;
+        padding: 20px 15px;
+        // row-gap: 15px; Deposit-i text@ ete uxxeluya uxxnq ete, che sharunakem
         margin: 35px 0 0 0;
 
         &_item {
@@ -83,6 +83,7 @@
                 }
             }
             &_text {
+                row-gap: 5px;
                 > h3 {
                     font-weight: 500;
                     font-size: 13px;
