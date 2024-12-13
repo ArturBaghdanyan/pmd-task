@@ -16,10 +16,9 @@ const TabProduct = () => {
         {color && (
           <>
             <Card style={{
-              background: 'linear-gradient(rgba(76, 73, 237, 1), rgba(10, 6, 244, 1))',
-              
-            }}
-              />
+              background: 'linear-gradient(rgba(76, 73, 237, 1), rgba(10, 6, 244, 1))',  
+              }}
+            />
             <Card 
               style={{
                 background: 'rgba(255, 255, 255, 1)'

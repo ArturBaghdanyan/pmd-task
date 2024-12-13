@@ -5,7 +5,7 @@ import PolarAreaChart from './polarChart';
 const Statistics = () => {
 
   return (
-    <section className={style.statistics}>
+    <div className={style.statistics}>
       <h2>Expense Statistics</h2>
       <div className={style.statistics_content}>
         {/* <div className={style.statistics_content_first}>
@@ -34,7 +34,7 @@ const Statistics = () => {
         </div> */}
         <PolarAreaChart />
       </div>
-    </section>
+    </div>
   )
 }
 

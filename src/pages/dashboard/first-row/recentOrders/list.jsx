@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 
 const List = ({icon, title, text, price}) => {
   return (
-  <section className={style.orders_list_item}>
+  <div className={style.orders_list_item}>
     <div className={style.orders_list_item_icon}>
       <img src={icon} alt="business-icon" />
     </div>
@@ -16,7 +16,7 @@ const List = ({icon, title, text, price}) => {
         {`-$${price}`}
       </span>
     </div>
-  </section>
+  </div>
   )
 }
 

@@ -6,9 +6,9 @@ import style from "./style.module.scss";
 const Products = ({isTab}) => {
 
   return (
-    <section className={style.aside_asideOne_content_piece}>
+    <div className={style.aside_asideOne_content_piece}>
       {isTab ? <TabProduct /> : <DesktopProduct />}
-    </section>
+    </div>
   )
 }
 
