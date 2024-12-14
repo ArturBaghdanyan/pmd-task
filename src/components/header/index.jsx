@@ -4,6 +4,7 @@ import settings from "../../assets/mainpage/header_images/settings.svg";
 import notification from "../../assets/mainpage/header_images/notification.svg";
 import morillo from "../../assets/mainpage/header_images/morillo.svg";
 import search from "../../assets/mainpage/header_images/search.svg";
+import menu from "../../assets/mainpage/header_images/menu.svg";
 
 const Header = ({isHomePage}) => {
 
@@ -12,6 +13,9 @@ const Header = ({isHomePage}) => {
       <div className={`${style.header_container} container_spacing`}>
         
         <div className={style.header_container_right}>
+          <div className={style.header_container_right_menu}>
+            <img src={menu} alt="menu-icon" />
+          </div>
           <div className={style.header_container_right_overview}>
           {isHomePage === 'Orders' ? (
               <span>Orders</span>
@@ -36,6 +40,10 @@ const Header = ({isHomePage}) => {
               <img src={morillo} alt="morillo" />
             </div>
           </div>
+        </div>
+        <div className={style.header_container_search}>
+          <img src={search} alt="search" />
+          <input type="search" placeholder='Search for something'/>
         </div>
       </div>
 

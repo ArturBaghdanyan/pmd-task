@@ -12,6 +12,9 @@
 		align-items: center;
 		justify-content: space-between;
 
+		&_search {
+			display: none;
+		}
 		&_right {
 			width: 100%;
 			display: flex;
@@ -19,6 +22,9 @@
 			align-items: center;
 			column-gap: 20px;
 
+			&_menu {
+				display: none;
+			}
 			&_overview {
 				> span {
 					font-size: 28px;
@@ -78,7 +84,106 @@
 	}
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+	.header {
+		height: auto;
+
+		&_container {
+			flex-direction: column;
+			padding: 20px 1.5rem;
+
+			&_search {
+				margin-top: 20px;
+				display: flex !important;
+				align-items: center;
+				width: 100%;
+				height: auto;
+				position: relative;
+					::placeholder {
+						color: rgba(139, 163, 203, 1);
+						font-weight: 400;
+						font-size: 15px;
+					}
+					> img {
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						left: 20px;
+					}
+
+					> input {
+						width: 100%;
+						height: 50px;
+						background: rgba(245, 247, 250, 1);
+						border: 1px solid rgba(230, 239, 245, 1);
+						border-radius: 40px;
+						outline: none;
+						padding-left: 60px;
+					}
+			}
+			&_right {
+				&_menu {
+					display: flex !important;
+				}
+				&_overview {
+					> span {
+						font-size: 20px;
+						line-height: 25px;
+					}
+				}
+				&_inputs {
+					&_search {
+						display: none !important;
+					}
+					&_images {
+						:nth-child(1), :nth-child(2) {
+							display: none !important;
+						}
+						:last-child {
+							width: 35px;
+							height: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+	}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+	.header {
+		&_container {
+			&_right {
+				
+				&_overview {
+					> span {
+						font-size: 20px;
+						line-height: 25px;
+					}
+				}
+
+				&_inputs {
+					&_search {	
+						::placeholder {
+							color: rgba(139, 163, 203, 1);
+							font-weight: 400;
+							font-size: 12px;
+						}
+						> img {
+							width: 16px;
+							height: 16px;
+						}
+						> input {
+							width: 210px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
 	.header {
 		&_container {
 			&_right {
