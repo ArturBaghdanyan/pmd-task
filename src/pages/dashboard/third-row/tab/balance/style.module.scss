@@ -1,4 +1,23 @@
 .balance {
     width: 53%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+
+    &_container {
+        width: 100%;
+        height: 220px;
+        margin-top: 16px;
+
+        &_chart {
+            background:rgba(255, 255, 255, 1);
+            border-radius: 20px;
+            &_line {
+                width: 90% !important;
+                margin: 0 auto;
+                padding: 22px 0;
+
+            }
+        }
+    }
 }

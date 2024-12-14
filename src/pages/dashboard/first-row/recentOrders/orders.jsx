@@ -12,6 +12,7 @@ const RecentOrders = ({isTab}) => {
 		 : <h2>Recent Orders</h2>}
         
         <div className={style.orders_list}>
+			<div className={style.orders_list_column}>
 			{orderList.map(item => 
 				<List 
 					key={item.id} 
@@ -21,6 +22,7 @@ const RecentOrders = ({isTab}) => {
 					price={item.price} 
 				/>
 			)}
+			</div>
           
         </div>
     </div>

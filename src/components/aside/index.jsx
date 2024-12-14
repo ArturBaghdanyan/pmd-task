@@ -9,7 +9,7 @@ const AsidePage = ({isTab}) => {
   return (
     <aside>  
       <Routes>
-        <Route path="/" element={<Dashboard isTab={isTab}/>} />
+        <Route path="/" element={<Dashboard isTab={isTab} />} />
         <Route path="/orders" element={<OrdersPage />} />
         <Route path="/orderDetails" element={<OrderDetails />} />
       </Routes>
