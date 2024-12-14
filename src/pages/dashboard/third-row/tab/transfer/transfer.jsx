@@ -25,7 +25,6 @@ const Transfer = () => {
 
         <div className={style.transfer_list_container}>
           <Swiper
-            // spaceBetween={15}
             slidesPerView={3}
             autoHeight={true}
             loop={true}
