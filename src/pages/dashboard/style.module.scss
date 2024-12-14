@@ -2,33 +2,37 @@
 @import "./sec-row/activity/style.module.scss";
 
   
-  .aside {
+.aside {
+  width: 100%;
+  height: auto;
+  background: #F5F7FAFF;
+  display: flex;
+  flex-direction: column;
+
+  &_asideOne {
     width: 100%;
     height: auto;
-    background: #F5F7FAFF;
-    display: flex;
-    flex-direction: column;
-  
-    &_asideOne {
-      width: 100%;
-      height: auto;
-    }
-  
-    &_asideTwo {
-      width: 100%;
-      height: auto;
-    }
-  
-    &_asideThree {
-      width: 100%;
-      height: auto;
-    }
-    & h2 {
-      color: rgba(52, 60, 106, 1);
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 27px;
-      margin: 0;
-    }
   }
-  
+
+  &_asideTwo {
+    width: 100%;
+    height: auto;
+  }
+
+  &_asideThree {
+    width: 100%;
+    height: auto;
+  }
+  & h2 {
+    color: rgba(52, 60, 106, 1);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .aside {
+    background: rgba(255, 255, 255, 1);
+  } 
+}

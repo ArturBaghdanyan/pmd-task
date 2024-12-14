@@ -45,8 +45,15 @@
         }
     }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
     .statistics {
-        max-width: 37% !important;
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .statistics {
+        width: 37% !important;
     }
 }
