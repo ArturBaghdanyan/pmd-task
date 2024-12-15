@@ -2,6 +2,7 @@
     width: 32%;
     display: flex;
     flex-direction: column;
+    margin-right: 1.75rem;
 
     &_list {
         background: rgba(255, 255, 255, 1);
@@ -80,7 +81,37 @@
 @media only screen and (max-width: 400px) {
     .orders {
       width: 100%;
-      margin: 0 auto;
+      margin: auto;
+      margin-left: 1.5rem;
+      > h2 {
+        font-size: 16px;
+      }
+      &_list {
+        &_column {
+            margin: 0;
+            &_item {
+
+                &_icon {
+                    width: 50px;
+                    height: 50px;
+                }
+                &_text {
+                    > h3 {
+                        font-size: 13px;
+                    }
+                    > p {
+                        font-size: 12px;
+                    }
+                }
+                &_price {
+                    &_number {
+                        font-size: 11px;
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+      }
     }
   }
 
