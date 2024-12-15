@@ -6,7 +6,7 @@
       width: 100%;
       height: auto;
       margin-top: 25px;
-
+      
       &_piece {
         max-width: 66.5%;
         width: 100%;
@@ -67,7 +67,6 @@
 
   @media only screen and (min-width: 901px) and (max-width: 1024px) {
     &_content {
-      column-gap: 25px;
 
       &_piece {
         max-width: 65% !important;

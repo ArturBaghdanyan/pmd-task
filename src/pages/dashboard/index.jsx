@@ -14,12 +14,10 @@ const Dashboard = ({isTab}) => {
       <Header />
       <div className={style.aside}>
           <div className={style.aside_asideOne}>
-          <div className="container_spacing">
-            <section className={style.aside_asideOne_content}>
+            <section className={`${style.aside_asideOne_content}`}>
               <Products isTab={isTab} />
               <RecentOrders isTab={isTab} />
             </section>
-          </div>
         </div>
 
         <div className={style.aside_asideTwo}>

@@ -8,6 +8,8 @@ import style from "./style.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation'; 
 
+
+
 const Transfer = () => {
   const swiperRef = useRef(null);
   const [list, setList] = useState(transferData);
@@ -25,8 +27,8 @@ const Transfer = () => {
 
         <div className={style.transfer_list_container}>
           <Swiper
-            slidesPerView={3}
             autoHeight={true}
+            slidesPerView={3}
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             className={style.transfer_list_container_mySwiper}
@@ -44,14 +46,9 @@ const Transfer = () => {
             ))}
             
           </Swiper>
-          <div>
-            <button 
-              onClick={handleNext} 
-              className={style.transfer_list_container_button}
-            >
-              <img src={arrow} alt="arrow" />
+            <button onClick={handleNext} className={style.transfer_list_container_button}>
+              <img src={arrow} alt="arrow right" />
             </button>
-          </div>
         </div>
 
         <div className={style.transfer_list_footer}>

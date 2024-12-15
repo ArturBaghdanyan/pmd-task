@@ -9,9 +9,9 @@
     height: auto;
     margin-top: 25px;
     
-        &_activity {
-            max-width: 65%;
-            width: 100%;
+    &_activity {
+        max-width: 65%;
+        width: 100%;
 
         &_row { 
             width: 100%;
@@ -58,21 +58,44 @@
                 }
             }
         }
-        }
+    }
 
       
-
-        @media only screen and (min-width: 901px) and (max-width: 1024px) {
-            &_activity {
-                max-width: 61% !important;
+    @media only screen and (max-width: 400px) {
+        &_activity {
+            > h2 {
+                font-size: 16px !important;
+                line-height: 19px !important;
+            }
+            &_row {
+                &_eclipse {
+                    &_item {
+                        > span {
+                            font-size: 12px !important;
+                            line-height: 14px !important;
+                        }
+                        > img {
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
             }
         }
     }
-    @media only screen and (max-width: 900px) {
+
+    @media only screen and (min-width: 901px) and (max-width: 1024px) {
+        &_activity {
+            max-width: 61% !important;
+        }
+    }
+}
+    @media only screen and (min-width: 400px) and (max-width: 900px) {
         &_content {
-        
           flex-direction: column;
-          margin: 0 auto;
+          margin: auto;
+          margin-top: 20px;
+
           &_activity {
             max-width: 100% !important;
           }

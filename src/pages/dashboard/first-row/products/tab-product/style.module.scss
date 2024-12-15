@@ -1,12 +1,20 @@
 .cards {
     max-width: 100%;
     height: auto;
+    margin: 0 1.75rem;
     
     &_header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        
+        > h2 {
+            color: rgba(52, 60, 106, 1);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+        }
         > span {
             color: rgba(52, 60, 106, 1);
             font-weight: 600;
@@ -19,7 +27,7 @@
         display: flex;
         align-items: center;
         margin-top: 35px;
-        column-gap: 25px;
+        column-gap: 25px !important;
 
         &_card {
             width: 100%;
@@ -29,6 +37,7 @@
             row-gap: 15px;
             color: rgba(255, 255, 255, 1);
             padding-top: 20px;
+            
 
             &_row {
                 display: flex;
@@ -82,6 +91,12 @@
                         line-height: 15px;
                     }
                 }
+                &_number {
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    color: rgba(255, 255, 255, 1);
+                }
             }
             
             &_item {
@@ -92,6 +107,40 @@
                 padding: 0 20px 0 20px;
                 border-top: 1px solid rgba(223, 234, 242, 1);
                 background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+                > span {
+                    color: rgba(52, 60, 106, 1);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cards {
+        margin: 0 !important;
+        &_header {
+            > h2 {
+                padding-left: 1.5rem;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            > span {
+                padding-right: 1.5rem;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        &_body {
+            &_slide + &_slide {
+                margin-left: 20px !important;
+            }
+            &_slide {
+                width: 72% !important;
+                margin-left: 1.5rem;
+            }
+            &_slide:nth-child(2) {
+                border: 1px solid rgba(223, 234, 242, 1);
+                border-radius: 15px;
             }
         }
     }

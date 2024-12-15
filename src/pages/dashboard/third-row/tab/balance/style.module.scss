@@ -22,7 +22,17 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 400px) {
+    .balance {
+        width: 100% !important;
+
+        > h2 {
+            font-size: 16px !important;
+            line-height: 19px !important;
+        }
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 900px) {
     .balance {
         width: 100% !important;
     }
