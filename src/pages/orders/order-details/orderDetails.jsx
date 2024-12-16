@@ -4,11 +4,10 @@ import Header from "../../../components/header/index";
 import DetailsForm from './detailsForm';
 
 const OrderDetails = () => {
-  const [currentPage, setCurrentPage] = useState('Orders');
 
   return (
 		<>
-			<Header isHomePage={currentPage} />
+			<Header />
 			<div className={style.orderDetails}>
 					<div className='container_spacing'>
 
