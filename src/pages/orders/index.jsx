@@ -5,12 +5,10 @@ import { SwiperList } from './swiperClick';
 import Header from '../../components/header';
 
 const OrdersPage = () => {
-  const [currentPage, setCurrentPage] = useState('Orders');
 
   return (
     <>
-      <Header isHomePage={currentPage} />
-
+      <Header  />
       <div className={style.orders}>
         <div className='container_spacing'>
           <h2>Order list</h2>
