@@ -5,8 +5,10 @@ import notification from "../../assets/mainpage/header_images/notification.svg";
 import morillo from "../../assets/mainpage/header_images/morillo.svg";
 import search from "../../assets/mainpage/header_images/search.svg";
 import menu from "../../assets/mainpage/header_images/menu.svg";
+import { useLocation } from 'react-router-dom';
 
-const Header = ({isHomePage}) => {
+const Header = () => {
+  const {pathname} = useLocation()
 
   return (
     <header className={style.header}>
@@ -17,13 +19,13 @@ const Header = ({isHomePage}) => {
             <img src={menu} alt="menu-icon" />
           </div>
           <div className={style.header_container_right_overview}>
-          {isHomePage === 'Orders' ? (
+          {pathname === 'Orders' ? (
               <span>Orders</span>
-            ) : isHomePage === "ordersDetails" ? (
+            ) : pathname === "ordersDetails" ? (
               <span>Orders</span>
-            ) : isHomePage === 'Products' ? (
+            ) : pathname === 'Products' ? (
               <span>Products</span>
-            ) : isHomePage === 'Reviews' ? (
+            ) : pathname === 'Reviews' ? (
               <span>Reviews</span>
             ) : (
               <span>Overview</span>
