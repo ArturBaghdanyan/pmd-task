@@ -1,8 +1,8 @@
 import React from 'react'
-import whiteChip from "../../../../../assets/mainpage/cards_icons/whiteChip.png";
-import blackChip from "../../../../../assets/mainpage/cards_icons/blackChip.png";
-import imgLight from "../../../../../assets/mainpage/cards_icons/showBlack.svg";
-import imgDark from "../../../../../assets/mainpage/cards_icons/show.svg";
+import whiteChip from "../assets/mainpage/cards_icons/whiteChip.png";
+import blackChip from "../assets/mainpage/cards_icons/blackChip.png";
+import imgLight from "../assets/mainpage/cards_icons/showBlack.svg";
+import imgDark from "../assets/mainpage/cards_icons/show.svg";
 import style from "./style.module.scss";
 
 export const Card = ({ style: customStyle, spanStyle, pStyle }) => {

@@ -1,0 +1,28 @@
+.statistics {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #F5F7FAFF;
+    
+    &_content {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0;
+        
+        
+        &_cards {
+            display: flex;
+            align-items: center;
+            column-gap: 25px;
+            margin-top: 20px;
+        }
+    }
+}
+h2 {
+    margin: 0;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 22px;
+    color: rgba(51, 59, 105, 1);
+}

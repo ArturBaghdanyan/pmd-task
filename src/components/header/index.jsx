@@ -16,6 +16,7 @@ const Header = () => {
     '/products': 'Products',
     '/productDetails': 'Products',
     '/reviews': 'Reviews',
+    '/statistics': 'Statistics',
   };
 
   const title = pathToTitleMap[pathname] || 'Overview';
@@ -29,17 +30,6 @@ const Header = () => {
             <img src={menu} alt="menu-icon" />
           </div>
           <div className={style.header_container_right_overview}>
-          {/* {pathname === 'Orders' ? (
-              <span>Orders</span>
-            ) : pathname === "ordersDetails" ? (
-              <span>Orders details</span>
-            ) : pathname === 'Products' ? (
-              <span>Products</span>
-            ) : pathname === 'Reviews' ? (
-              <span>Reviews</span>
-            ) : (
-              <span>Overview</span>
-            )} */}
             <span>{title}</span>
           </div>
           <div className={style.header_container_right_inputs}>
