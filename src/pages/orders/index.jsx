@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import style from "./style.module.scss";
 import { orderData } from '../../data/orders/orderList';
 import { SwiperList } from './swiperClick';
@@ -8,7 +8,7 @@ const OrdersPage = () => {
 
   return (
     <>
-      <Header  />
+      <Header />
       <div className={style.orders}>
         <div className='container_spacing'>
           <h2>Order list</h2>
@@ -16,7 +16,6 @@ const OrdersPage = () => {
              <SwiperList data={orderData} />  
           </div>
         </div>
-        
       </div>
     </>
 

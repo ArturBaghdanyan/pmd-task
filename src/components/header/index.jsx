@@ -8,7 +8,17 @@ import menu from "../../assets/mainpage/header_images/menu.svg";
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const {pathname} = useLocation()
+  const { pathname } = useLocation()
+
+  const pathToTitleMap = {
+    '/orders': 'Orders',
+    '/orderDetails': 'Orders Details',
+    '/products': 'Products',
+    '/productDetails': 'Products',
+    '/reviews': 'Reviews',
+  };
+
+  const title = pathToTitleMap[pathname] || 'Overview';
 
   return (
     <header className={style.header}>
@@ -19,17 +29,18 @@ const Header = () => {
             <img src={menu} alt="menu-icon" />
           </div>
           <div className={style.header_container_right_overview}>
-          {pathname === 'Orders' ? (
+          {/* {pathname === 'Orders' ? (
               <span>Orders</span>
             ) : pathname === "ordersDetails" ? (
-              <span>Orders</span>
+              <span>Orders details</span>
             ) : pathname === 'Products' ? (
               <span>Products</span>
             ) : pathname === 'Reviews' ? (
               <span>Reviews</span>
             ) : (
               <span>Overview</span>
-            )}
+            )} */}
+            <span>{title}</span>
           </div>
           <div className={style.header_container_right_inputs}>
             <div className={style.header_container_right_inputs_search}>
