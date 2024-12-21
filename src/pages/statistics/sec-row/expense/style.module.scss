@@ -1,0 +1,14 @@
+.expense {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 20px;
+
+    &_content {
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 25px;
+        width: 100%;
+        height: 310px;
+        margin-top: 20px;
+    }
+}

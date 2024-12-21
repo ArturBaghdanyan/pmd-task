@@ -65,9 +65,9 @@ export function SwiperList({ data }) {
             </div>
             <div className={style.orders_list_column_mySwiper_list_body}>
               {item.column &&
-                item.column.map((i) => (
+                item.column.map((i, index) => (
                   <div
-                    key={`column-${i.id}`}
+                    key={`${i.id}-${index}`}
                     className={style.orders_list_column_mySwiper_list_body_row}
                   >
                     <span>{i.text}</span>
@@ -83,134 +83,134 @@ export function SwiperList({ data }) {
                 ))}
             </div>
           	</SwiperSlide>
-						<SwiperSlide className={style.orders_list_column_mySwiper_list}>
-							<div className={style.orders_list_column_mySwiper_list_header}>
-								{item.title &&
-									item.title.map((text, index) => (
-										<div
-											key={`${item.id}-${index}`}
-											className={style.orders_list_column_mySwiper_list_header_title}
-										>
-											<h3>{text}</h3>
-										</div>
-									))}
-							</div>
-							<div className={style.orders_list_column_mySwiper_list_body}>
-								{item.column &&
-									item.column.map((i) => (
-										<div
-											key={`column-${i.id}`}
-											className={style.orders_list_column_mySwiper_list_body_row}
-										>
-											<span>{i.text}</span>
-											<span>{i.orderId}</span>
-											<span>{i.type}</span>
-											<span>{i.userId}</span>
-											<span>{i.date}</span>
-											<span>{i.amount}</span>
-											<Link to="/orderDetails">
-												<button>{i.action}</button>
-											</Link>
-										</div>
-									))}
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className={style.orders_list_column_mySwiper_list}>
-							<div className={style.orders_list_column_mySwiper_list_header}>
-								{item.title &&
-									item.title.map((text, index) => (
-										<div
-											key={`${item.id}-${index}`}
-											className={style.orders_list_column_mySwiper_list_header_title}
-										>
-											<h3>{text}</h3>
-										</div>
-									))}
-							</div>
-							<div className={style.orders_list_column_mySwiper_list_body}>
-								{item.column &&
-									item.column.map((i) => (
-										<div
-											key={`column-${i.id}`}
-											className={style.orders_list_column_mySwiper_list_body_row}
-										>
-											<span>{i.text}</span>
-											<span>{i.orderId}</span>
-											<span>{i.type}</span>
-											<span>{i.userId}</span>
-											<span>{i.date}</span>
-											<span>{i.amount}</span>
-											<Link to="/orderDetails">
-												<button>{i.action}</button>
-											</Link>
-										</div>
-									))}
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className={style.orders_list_column_mySwiper_list}>
-							<div className={style.orders_list_column_mySwiper_list_header}>
-								{item.title &&
-									item.title.map((text, index) => (
-										<div
-											key={`${item.id}-${index}`}
-											className={style.orders_list_column_mySwiper_list_header_title}
-										>
-											<h3>{text}</h3>
-										</div>
-									))}
-							</div>
-							<div className={style.orders_list_column_mySwiper_list_body}>
-								{item.column &&
-									item.column.map((i) => (
-										<div
-											key={`column-${i.id}`}
-											className={style.orders_list_column_mySwiper_list_body_row}
-										>
-											<span>{i.text}</span>
-											<span>{i.orderId}</span>
-											<span>{i.type}</span>
-											<span>{i.userId}</span>
-											<span>{i.date}</span>
-											<span>{i.amount}</span>
-											<Link to="/orderDetails">
-												<button>{i.action}</button>
-											</Link>
-										</div>
-									))}
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className={style.orders_list_column_mySwiper_list}>
-							<div className={style.orders_list_column_mySwiper_list_header}>
-								{item.title &&
-									item.title.map((text, index) => (
-										<div
-											key={`${item.id}-${index}`}
-											className={style.orders_list_column_mySwiper_list_header_title}
-										>
-											<h3>{text}</h3>
-										</div>
-									))}
-							</div>
-							<div className={style.orders_list_column_mySwiper_list_body}>
-								{item.column &&
-									item.column.map((i) => (
-										<div
-											key={`column-${i.id}`}
-											className={style.orders_list_column_mySwiper_list_body_row}
-										>
-											<span>{i.text}</span>
-											<span>{i.orderId}</span>
-											<span>{i.type}</span>
-											<span>{i.userId}</span>
-											<span>{i.date}</span>
-											<span>{i.amount}</span>
-											<Link to="/orderDetails">
-												<button>{i.action}</button>
-											</Link>
-										</div>
-									))}
-							</div>
-						</SwiperSlide>
+					<SwiperSlide className={style.orders_list_column_mySwiper_list}>
+						<div className={style.orders_list_column_mySwiper_list_header}>
+							{item.title &&
+								item.title.map((text, index) => (
+									<div
+										key={`${item.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_header_title}
+									>
+										<h3>{text}</h3>
+									</div>
+								))}
+						</div>
+						<div className={style.orders_list_column_mySwiper_list_body}>
+							{item.column &&
+								item.column.map((i, index) => (
+									<div
+										key={`${i.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_body_row}
+									>
+										<span>{i.text}</span>
+										<span>{i.orderId}</span>
+										<span>{i.type}</span>
+										<span>{i.userId}</span>
+										<span>{i.date}</span>
+										<span>{i.amount}</span>
+										<Link to="/orderDetails">
+											<button>{i.action}</button>
+										</Link>
+									</div>
+								))}
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className={style.orders_list_column_mySwiper_list}>
+						<div className={style.orders_list_column_mySwiper_list_header}>
+							{item.title &&
+								item.title.map((text, index) => (
+									<div
+										key={`${item.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_header_title}
+									>
+										<h3>{text}</h3>
+									</div>
+								))}
+						</div>
+						<div className={style.orders_list_column_mySwiper_list_body}>
+							{item.column &&
+								item.column.map((i,index) => (
+									<div
+										key={`${i.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_body_row}
+									>
+										<span>{i.text}</span>
+										<span>{i.orderId}</span>
+										<span>{i.type}</span>
+										<span>{i.userId}</span>
+										<span>{i.date}</span>
+										<span>{i.amount}</span>
+										<Link to="/orderDetails">
+											<button>{i.action}</button>
+										</Link>
+									</div>
+								))}
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className={style.orders_list_column_mySwiper_list}>
+						<div className={style.orders_list_column_mySwiper_list_header}>
+							{item.title &&
+								item.title.map((text, index) => (
+									<div
+										key={`${item.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_header_title}
+									>
+										<h3>{text}</h3>
+									</div>
+								))}
+						</div>
+						<div className={style.orders_list_column_mySwiper_list_body}>
+							{item.column &&
+								item.column.map((i, index) => (
+									<div
+										key={`${i.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_body_row}
+									>
+										<span>{i.text}</span>
+										<span>{i.orderId}</span>
+										<span>{i.type}</span>
+										<span>{i.userId}</span>
+										<span>{i.date}</span>
+										<span>{i.amount}</span>
+										<Link to="/orderDetails">
+											<button>{i.action}</button>
+										</Link>
+									</div>
+								))}
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className={style.orders_list_column_mySwiper_list}>
+						<div className={style.orders_list_column_mySwiper_list_header}>
+							{item.title &&
+								item.title.map((text, index) => (
+									<div
+										key={`${item.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_header_title}
+									>
+										<h3>{text}</h3>
+									</div>
+								))}
+						</div>
+						<div className={style.orders_list_column_mySwiper_list_body}>
+							{item.column &&
+								item.column.map((i,index) => (
+									<div
+										key={`${i.id}-${index}`}
+										className={style.orders_list_column_mySwiper_list_body_row}
+									>
+										<span>{i.text}</span>
+										<span>{i.orderId}</span>
+										<span>{i.type}</span>
+										<span>{i.userId}</span>
+										<span>{i.date}</span>
+										<span>{i.amount}</span>
+										<Link to="/orderDetails">
+											<button>{i.action}</button>
+										</Link>
+									</div>
+								))}
+						</div>
+					</SwiperSlide>
 			</div>
         ))}
       </Swiper>
