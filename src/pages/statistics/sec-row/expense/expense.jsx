@@ -6,9 +6,7 @@ const Expense = () => {
     <div className={style.expense}>
         <h2>Card Expense Statistics</h2>
         <div className={style.expense_content}>
-            <div>
-
-            </div>
+            
         </div>
     </div>
   )
