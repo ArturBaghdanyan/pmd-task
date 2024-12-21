@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import { Card } from '../../../../card';
-import style from "../style.module.scss";
+import style from "../../../../style.module.scss";
 import {Swiper, SwiperSlide} from 'swiper/react';
 
 const TabProduct = () => {
   const [color, setColor] = useState(true)
-const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 400);
-const [activeIndex, setActiveIndex] = useState(0)
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 400);
+  const [activeIndex, setActiveIndex] = useState(0)
+
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 400);
 

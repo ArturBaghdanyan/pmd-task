@@ -115,6 +115,51 @@
     }
 }
 
+@media only screen and (min-width: 901px) and (max-width: 1015px) {
+    .cards {
+
+        &_header {
+            > h2 {
+                font-size: 18px;
+                line-height: 21px;
+            }
+            > span {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+        &_body {
+            &_card {
+                &_row {
+                    &_balance {
+                        > p {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                    &_number {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    &_icon {
+                        width: 25px !important;
+                        height: 25px !important;
+                    }
+                    &_text {
+                        > p {
+                            font-size: 13px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+                &_item {
+                    padding-right: 22px !important;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .cards {
         margin: 0 !important;
